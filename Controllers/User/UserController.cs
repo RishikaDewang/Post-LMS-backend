@@ -330,7 +330,7 @@ namespace LMS.Controllers
                 userData.Password = randomPassword;
 
                 // Send welcome email
-                SendWelcomeEmail(userData.Email, "Welcome to LMS!", $"Please login with your Mail Id and Password : Your default password is: {randomPassword} Here is LMS link : http://10.0.0.185/LearningManagementSystem/#/");
+                SendWelcomeEmail(userData.Email, "Welcome to LMS!", $"Please login with your Mail Id and Password : Your default password is: {randomPassword} Here is LMS link : https://lms-frontend-ihjp.onrender.com/");
 
                 // Successful addition, return OK response
                 return Ok();
