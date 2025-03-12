@@ -361,13 +361,13 @@ namespace LMS.Controllers
             using (SmtpClient smtpClient = new SmtpClient("smtp.gmail.com"))
             {
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("rishikadewang1999@gmail.com", "wxhp tbiq sedi vbnf");
+                smtpClient.Credentials = new NetworkCredential("rishika.dewang.averybit@gmail.com", "icuj fwlw vtkp ixzx");
                 smtpClient.EnableSsl = true;
                 smtpClient.Port = 587; // Use port 465 for SSL
 
                 using (MailMessage mailMessage = new MailMessage())
                 {
-                    mailMessage.From = new MailAddress("rishikadewang1999@gmail.com");
+                    mailMessage.From = new MailAddress("rishika.dewang.averybit@gmail.com");
                     mailMessage.To.Add(toEmail);
                     mailMessage.Subject = subject;
                     mailMessage.Body = body;
